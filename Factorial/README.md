@@ -41,7 +41,7 @@ Maximum value executed without overflow:
 
 ### Recursive Output Screenshot
 
-![Recursive Output](https://github.com/kushalkumarj2006/DAA-Assign/blob/main/rec.png)
+![Recursive Output](/Factorial/rec.png)
 ### Iterative Output Screenshot
 
 ![Iterative Output](https://github.com/kushalkumarj2006/DAA-Assign/blob/main/Factorial/iter.png)
