@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <windows.h>
+
+long long factorial(int n) {
+  long long fact = 1;
+
+  for (int i = 1; i <= n; i++) fact *= i;
+
+  return fact;
+}
+
+int main() {
+  LARGE_INTEGER start, end, freq;
+  QueryPerformanceFrequency(&freq);
+
+  printf("n\tFactorial\tTime(ns)\n");
+
+  for (int n = 1; n <= 21; n++) {
+    long long result;
+
+    QueryPerformanceCounter(&start);
+
+    for (int i = 0; i < 100000; i++) {
+      result = factorial(n);
+    }
+
+    QueryPerformanceCounter(&end);
+
+    long long time =
+        (end.QuadPart - start.QuadPart) * 1000000000LL / freq.QuadPart;
+
+    printf("%d\t%lld\t\t%lld\n", n, result, time);
+  }
+
+  return 0;
+}
