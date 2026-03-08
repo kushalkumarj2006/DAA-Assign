@@ -39,7 +39,7 @@ Maximum number of disks executed:
 
 ### Program Output Screenshot
 
-![Program Output](TOH/output.png)
+![Program Output](/TOH/output.png)
 
 ---
 
@@ -47,7 +47,7 @@ Maximum number of disks executed:
 
 Graph plotted for **Number of Disks vs Time Taken (seconds)**.
 
-![Runtime Graph](TOH/graph.png)
+![Runtime Graph](/TOH/graph.png)
 
 ---
 
